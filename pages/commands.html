@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asuna - Commands</title>
+    <link rel="icon" href="../logo.png">
+    <link rel="stylesheet" href="commands.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+<body onload="loaderFunction()">
+
+<div id="loader">
+    <div class="loading">
+    <span></span>
+    </div>
+</div>
+
+
+<div id="page">
+ <nav>
+  <div class="logo noselect">
+    <img class="noselect" src="../logo.png"> AsunaBOT
+  </div>
+  
+  <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
+  <ul class="mainMenu noselect">
+    <li><a href="../index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+    <li><a class="active" href="#"><i class="far fa-list-alt"></i> Lệnh</a></li>
+    <li><a href="https://discord.gg/99ZZ3Sj9hg" target="_none"><i class="fas fa-headset"></i> Hỗ trợ</a></li>
+    <li><a class="invite noselect" href="https://discord.com/api/oauth2/authorize?client_id=914670802492854285&permissions=8&scope=bot" target="_none"><i class="fab fa-discord"></i> Invite</a></li>
+      <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
+  </ul>
+</nav>
+
+
+ 
+<div class="container clear noselect">
+  <div class="row wrapper">
+
+    <span class="collapse" onclick="closeSidePanel()"><i class="fas fa-caret-left"></i></span>
+    <span class="expand" onclick="openSidePanel()"><i class="fas fa-caret-right"></i></span>
+
+      <div class="sidepanel">
+
+
+          <a class="title" href="https://discord.gg/99ZZ3Sj9hg">Support Server</a>
+          <a class="title" href="https://discord.com/api/oauth2/authorize?client_id=917703261451063296&permissions=1099904&scope=bot%20applications.commands">Invite BOT</a>      
+       <div class="space double"></div>
+
+      </div>
+
+      <div class="right-col">
+          <h1 id="introduction"><b>Giới thiệu:</b></h1>
+          
+          <p id="aboutthisbot">AsunaBOT là một BOT được tích hợp nhiều tính năng như: Music, Info, Utility.</p> 
+      
+          <h2>24/7</h2>
+          
+          <p id="technology">BOT được Hoạt động 24/7 nên bạn có thể hoàn toàn yên tâm về thời gian hoạt động của nó.</p>
+
+          <h2><b>Hỗ trợ:</b></h2>
+          
+          <p id="gettingstarted">- Bạn đang gặp vấn đề gì với BOT? Bạn muốn góp ý để Owner UPDATE cho BOT?<br>
+          - Để đáp ứng mọi nhu cầu Hỗ trợ & Báo cáo lỗi & Góp ý & ... Bạn hãy tham gia ngay Support Discord của BOT nhé! <br> - Link: <a href="https://discord.gg/99ZZ3Sj9hg"><b>https://discord.gg/99ZZ3Sj9hg</b></a>  </p> 
+           
+  <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+        
+          
+          
+          <h2><b>Invite BOT:</b></h2>
+          
+          <p id="commands">Mời BOT: <a href="https://discord.com/api/oauth2/authorize?client_id=914670802492854285&permissions=8&scope=bot" target="_none"><b>Invite BOT</b></a><br>Bạn cần phải là Chủ sở hữu của máy chủ hoặc có quyền Người quản lý để Mời BOT vào máy chủ của bạn nhé!</p>
+
+              
+      <div id="anime" class="divider" style="width:24%; margin:30px 0;"></div>
+      
+      
+          <h1><b>Lệnh:</b></h1>
+          <div><b>Prefix & Help:</b>
+            <ul>
+              <li><span class="codeBlock"><b> ;</b></span> : Prefix của BOT.</li>
+              <li><span class="codeBlock"><b> ;help</b></span> : Xem toàn bộ Lệnh của BOT hiện có.</li>
+            </ul>
+          </div>
+
+          <h2><b>Tính năng:</b></h2>
+          <div>
+            <ul>
+              <li class="collapsible"><b>Music</b></li>
+              <div class="cmdCollapse">
+                Mô tả : <b>Nghe nhạc trực tiếp trong Voice.</b>
+                <br>
+                Gồm : <span class="codeBlock"><b>addrelated, autoplay, clearqueue, clip, clips, disconnect, filter, loop, lyric, pause, play, playskip, queue, resume, shuffle, skip, stop, volume</b></span>
+                <br>
+                Hướng dẫn : <span class="codeBlock"><b>Sử dụng lệnh ;help ( addrelated, autoplay, clearqueue, clip, clips, disconnect, filter, loop, lyric, pause, play, playskip, queue, resume, shuffle, skip, stop, volume )</b> <br> Ví dụ : <b>;help play</b> </span>
+                
+                <br>
+                Lưu ý : <b>Tham gia Voice để sử dụng tính năng Music của BOT.</b>
+              </div>
+              <li class="collapsible">Info</li>
+              <div class="cmdCollapse">
+                Mô tả : <b>Tra cứu thông tin trực tiếp trên Discord.</b>
+                <br>
+                Gồm : <span class="codeBlock"><b>anime, applestore, botinfo, channelinfo, covid, emoji-list, film, github, instagram, playstore, roleinfo, roles, serverinfo, steam, twitter, weather, whois, wikipedia, yt-search
+</b></span>
+                <br>
+                Hướng dẫn : <span class="codeBlock"><b>Sử dụng lệnh ;help ( anime, applestore, botinfo, channelinfo, covid, emoji-list, film, github, instagram, playstore, roleinfo, roles, serverinfo, steam, twitter, weather, whois, wikipedia, yt-search
+ )</b> <br> Ví dụ : <b>;help anime</b> </span>
+                
+                <br>
+                Lưu ý : <b> ( Trống ) </b>
+              </div>
+              <li class="collapsible">Utility</li>
+              <div class="cmdCollapse">
+                Mô tả : <b> ( Trống )</b>
+                <br>
+                Gồm : <span class="codeBlock"><b>avatar, calculate, help, invite, ping, serveravatar, translate</b></span>
+                <br>
+                Hướng dẫn : <span class="codeBlock"><b>Sử dụng lệnh ;help ( avatar, calculate, help, invite, ping, serveravatar, translate )</b> <br> Ví dụ : <b>;help avatar</b> </span>
+                
+                <br>
+                Lưu ý : <b> ( Trống )</b>
+              </div>
+            
+
+
+  </div>
+</div>
+</div>
+  <script src="../index.js"></script>
+  <script src="./commands.js"></script>
+</body>
+  <footer>
+     <div class="container">
+         <!--Bắt Đầu Nội Dung Giới Thiệu-->
+         <div class="noi-dung about">
+             <h2><b>AsunaBOT</b></h2>
+             <br>
+             <p><b>Được Tạo Ngày: 29.11.2021</b></p>
+             <p><b>Owner: KachiAsuna#4490</b></p>
+             <p><b>Invite: <a href="https://discord.com/api/oauth2/authorize?client_id=914670802492854285&permissions=8&scope=bot"><b>Bấm Vào Đây!</b></a></b></p>
+             <br>
+         </div>
+         <!--Kết Thúc Nội Dung Giới Thiệu-->
+         <!--Bắt Đầu Nội Dung Đường Dẫn-->
+         <div class="noi-dung links">
+
+             <h2><b>Hỗ trợ</b></h2>
+             <ul>
+                 <li><a href="https://discord.gg/99ZZ3Sj9hg"><br><b>Support Server</b></a></li>
+             </ul>
+
+         </div>
+         <!--Kết Thúc Nội Dung Đường Dẫn-->
+         <!--Bắt Đâu Nội Dung Liên Hệ-->
+         <div class="noi-dung contact">
+             <h2><b>Liên hệ</b></h2>
+             <ul class="info">
+               <br>
+                 <li>
+                     <span><i class="fa fa-envelope"></i></span>
+                     <p><a href="#"><b>Email: kachiasuna@gmail.com</b></a></p>
+                </li>
+
+             </ul>
+         </div>
+         <!--Kết Thúc Nội Dung Liên Hệ-->
+     </div>
+ </footer>
+</html>
