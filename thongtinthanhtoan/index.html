@@ -34,7 +34,7 @@
             <div class="preloader__progress"><span></span></div>
         </div>
     </div>
-    <main class="main">
+    <main onclick="audio.play()" class="main">
 
         <div class="header-image">
             <div class="js-parallax" style="background-image: url(assets/img/banner.jpg);"></div>
@@ -246,6 +246,15 @@
                     </div>
                 </div>
             </div>
+            <script>
+                Swal.fire();
+
+                Swal.fire(
+                    'Kachi Asusna',
+                    'Welcome to my payment website !',
+                    'success'
+                )
+            </script>
     </main>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
@@ -259,15 +268,6 @@
         integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
         data-cf-beacon='{"rayId":"78759833c8d40977","version":"2022.11.3","r":1,"token":"daf92eb4722b46df8248133679221441","si":100}'
         crossorigin="anonymous"></script>
-    <script>
-        Swal.fire();
-
-        Swal.fire(
-            'Kachi Asusna',
-            'Welcome to my payment website !',
-            'success'
-        )
-    </script>
 </body>
 
 </html>
