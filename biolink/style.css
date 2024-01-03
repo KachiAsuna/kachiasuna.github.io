@@ -1,0 +1,228 @@
+/* ========== BODY ========== */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* ========== ROOT ========== */
+:root {
+    --text-color: #DF2E38;
+    --link-bg-color: #DF2E38;
+}
+
+/* ========== OVERLAY ========== */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    display: none;
+    z-index: 999;
+}
+
+/* ========== POPUP ========== */
+
+.popup {
+    width: 50rem;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    border-radius: 2rem;
+    animation: fadeIn 3s;
+    box-shadow: 0 0 10px black;
+}
+  
+.popup .content h1 {
+    color: black;
+    padding-top: 1rem;
+}
+  
+.popup .content h4 {
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+  
+.popup .content img {
+    width: 8rem;
+    border-radius: 50%;
+    margin: 0 auto 0 auto;
+}
+  
+.popup .content {
+    text-align: center;
+    padding: 2rem;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: #DF2E38;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    box-shadow: 0px 0px 5px #DF2E38;
+    transition: all 200ms;
+    font-size: 20px;
+    border-radius: 0.8rem;
+    margin: 20px 0;
+    height: 48px;
+    width: auto;
+    min-width: 200px;
+}
+
+h1, p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ========== TEXT ========== */
+h1 {
+    font-weight: 1000;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ========== CONTAINER ========== */
+.container  {
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+/* ========== BIOLINK ========== */
+#biolink {
+    width: 100%;
+}
+
+/* ========== BIOLINK - INFORMATION ========== */
+#information {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#information .avatar {
+    width: 20rem;
+}
+
+#information .avatar img {
+    width: 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#information .name h1 {
+    font-size: 40px;
+    color: var(--text-color);
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#information .desc p {
+    font-size: 20px;
+    margin-top: 0.5rem;
+}
+
+
+/* ========== BIOLINK - LINK ========== */
+#link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#link .link {
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.048);
+    border-radius: 10px;
+    margin: 10px auto;
+    transition: 1s;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    background-image: linear-gradient(to right, #D83F31, #DF2E38);
+}
+
+#link .link h2 {
+    padding: 10px;
+}
+
+#link .link:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .content p {
+    color: #DF2E38;
+}
+
+/* ========== RESPONSIVE ========== */
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #information .avatar {
+        width: 13rem;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    #information .avatar {
+        width: 10rem;
+    }
+
+    #information .name h1 {
+        font-size: 30px;
+        color: var(--text-color);
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    #link .link h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
